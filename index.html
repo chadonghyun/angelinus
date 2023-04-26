@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel in us</title>
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <link rel="stylesheet" href="./css/main_pc.css" type="text/css">
+    <link rel="stylesheet" href="./css/main_tablet.css" type="text/css">
+    <link rel="stylesheet" href="./css/main_mobile.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="./script/common.js" defer></script>
+    <script src="./script/wheel_test.js" defer></script>
+    <!-- <script src="./script/main2s.js" defer></script> -->
+    <!-- 제이쿼리 라이브러리 -->
+    <script src="./script/jquery-3.6.3.min.js"></script>
+    <!-- 제이쿼리 UI라이브러리 -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <h1>
+                <a href="index.html" title="메인페이지로 이동">
+                    <img src="./images/logo.png" alt="엔젤리너스 로고" class="hide-768-inline">
+                    <img src="./images/logo_mobile.png" alt="엔젤리너스 로고" class="view-768-inline">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul class="depth1">
+                    <li>
+                        <a href="menu.html" title="메뉴">메뉴</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="menu.html#coffee" title="커피">커피</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#angel_in_snow" title="angel in snow
+                                ">ANGEL<br>IN SNOW
+                            </a>
+                            </li>
+                            <li>
+                                <a href="menu.html#tea" title="차">차</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#beverage" title="음료">음료</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#dessert" title="디저트">디저트</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comunity.html" title="커뮤니티">커뮤니티</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="event.html" title="이벤트">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="voc.html" title="고객의 소리">고객의 소리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="brand.html" title="어바웃어스">어바웃어스</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="brand.html" title="엔제리너스">엔제리너스</a>
+                            </li>
+                            <li>
+                                <a href="Globalization.html" title="Globalization">Globalization</a>
+                            </li>
+                            <li>
+                                <a href="beverage.html" title="음료">A cup of<br>perpection</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="store.html" title="매장">매장</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="store.html" title="엔제리너스 매장">엔제리너스 매장</a>
+                            </li>
+                            <li>
+                                <a href="coffee.html" title="케이터링 서비스">케이터링 서비스</a>
+                            </li>
+                            <li>
+                                <a href="store.html" title="매장찾기">매장찾기</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://smartstore.naver.com/angelinusmall" target="_blank" title="온라인매장" >온라인매장</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sns">
+                <a href="https://www.instagram.com/angelinus_coffee/" target="_blank" title="인스타그램">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/angelinustime" target="_blank" title="페이스북">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/angelinustime" target="_blank" title="트위터">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <a href="login.html" title="회원 로그인" class="login">LOGIN</a>
+
+            <!-- mobile -->
+            
+            <a href="#" title="전체메뉴 불러오기" class="mobile_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <nav class="m_gnb">
+                <div class="view-1024">
+                    <h2 class="gnb_logo">
+                        <a href="index.html" title="메인페이지로 이동">
+                            <img src="./images/logo_white.png" alt="엔제리너스">
+                        </a>
+                    </h2>
+                    <div class="f_sns">
+                        <a href="https://www.instagram.com/angelinus_coffee/" target="_blank" title="인스타그램">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/angelinustime" target="_blank" title="페이스북">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/angelinustime" target="_blank" title="트위터">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="m_login">
+                        <a href="login.html" title="로그인 페이지">LOGIN <i><img src="./images/login_icon_mobile.png" alt=""></i></a>
+                    </div>
+                </div>
+                <div class="view-768">
+                    <div class="m_login">
+                        <a href="login.html" title="로그인 페이지">로그인 <i><img src="./images/login_icon_mobile.png" alt=""></i></a>
+                    </div>
+                    <h2 class="gnb_logo">
+                        <img src="./images/logo_white.png" alt="엔제리너스">
+                    </h2>
+                </div>
+                <ul class="depth1">
+                    <li>
+                        <a href="menu.html" title="메뉴">메뉴</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="menu.html#coffee" title="커피">커피</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#angel_in_snow" title="angel in snow
+                                ">ANGEL IN SNOW
+                            </a>
+                            </li>
+                            <li>
+                                <a href="menu.html#tea" title="차">차</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#beverage" title="음료">음료</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#dessert" title="디저트">디저트</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comunity.html" title="커뮤니티">커뮤니티</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="event.html" title="이벤트">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="voc.html" title="고객의 소리">고객의 소리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="brand.html" title="어바웃어스">어바웃어스</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="brand.html" title="엔제리너스">엔제리너스</a>
+                            </li>
+                            <li>
+                                <a href="Globalization.html" title="Globalization">Globalization</a>
+                            </li>
+                            <li>
+                                <a href="beverage.html" title="음료">A cup of<br>perpection</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="store.html" title="매장">매장</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="store.html" title="엔제리너스 매장">엔제리너스 매장</a>
+                            </li>
+                            <li>
+                                <a href="coffee.html" title="케이터링 서비스">케이터링 서비스</a>
+                            </li>
+                            <li>
+                                <a href="store.html" title="매장찾기">매장찾기</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="smartstore.html">온라인매장</a>
+                    </li>
+                    <li>
+                        <a href="https://www.lotteeatz.com/main/angel.html">LOTTE EATZ</a>
+                    </li>
+                </ul>
+
+
+                <div class="f_sns view-768">
+                    <a href="https://www.instagram.com/angelinus_coffee/" target="_blank" title="인스타그램">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/angelinustime" target="_blank" title="페이스북">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/angelinustime" target="_blank" title="트위터">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+
+            </nav>
+
+
+
+        </div>
+    </header>
+
+    <!-- 메인영역 -->
+    <main >  
+        <section>
+            <h2 class="d-none">메인슬아이드</h2>
+            
+            <!-- 1번 섹션 -->
+
+            <article class="main_banner">
+                <h2 class="d-none">메인배너</h2>
+                <ul class="slide">
+                    <li class="video_box">
+                        <div class="main_txt">
+                        <p>Always excellent drop</p>
+                        <p>ANGEL<span>IN</span>US</p>
+                        <p>최고의 커피 한잔으로 맛보는</p>
+                        <p>여유와 자유로움</p>
+                        </div>
+                        <a href="#" title="">
+                            <video controls autoplay loop muted>
+                                <source src="./vod/coffee06.mp4" type="video/mp4">
+                            </video>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="hide-1024-inline"><img src="./images/main_banner1.jpg" alt="배너2"></a>
+                        <a href="#" title="" class="view-1024-inline"><img src="./images/main_banner1_m.jpg" alt="배너2"></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="hide-1024-inline"><img src="./images/main_banner2.jpg" alt="배너3"></a>
+                        <a href="#" title="" class="view-1024-inline"><img src="./images/main_banner4_m.jpg" alt="배너2"></a>
+                    </li>
+                    <li>
+                        <a href="#" title="" class="hide-1024-inline"><img src="./images/main_banner3.jpg" alt="배너4"></a>
+                        <a href="#" title="" class="view-1024-inline"><img src="./images/main_banner3_m.jpg" alt="배너2"></a>
+                    </li>
+                </ul>
+                <div class="btn_box1">
+                    <a href="#none" title="이전" id="prev_btn" class="button"><i class="fas fa-angle-left"></i></a>
+                </div>   
+                <div class="btn_box2">
+                    <a href="#none" title="다음" id="next_btn" class="button"><i class="fas fa-angle-right"></i></a>
+                </div>
+                <ul class="c_btn">
+                    <li class="on">&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li><li>&nbsp;</li>
+                </ul>
+            </article>
+
+            <!-- 2번 섹션 -->
+
+            <article class="main_menu">
+                <h2 class="d-none">메뉴</h2>
+                <div class="bg_box">&nbsp;</div>
+                <div class="menu_button">
+                    <a href="./menu.html" title="메뉴페이지">메뉴 보기</a>
+                </div>
+                <div class="menu_txt">
+                    <p>당신을 미소 짓게 하는 천사의 커피</p>
+                    <p>angel<span>in</span>us</p>
+                    <p>menu</p>
+                </div>
+                <div class="menu_tab">
+                    <input type="radio" id="tabmenu01" name="coffee" checked>
+                    <label for="tabmenu01">coffee</label><br>
+                    <input type="radio" id="tabmenu02" name="coffee">
+                    <label for="tabmenu02">beverage</label><br>
+                    <input type="radio" id="tabmenu03" name="coffee">
+                    <label for="tabmenu03">dessert</label>
+                </div>
+                <div class="rolling_wrap1">
+                    <img src="./images/coffee1.png" alt="">
+                    <img src="./images/coffee2.png" alt="">
+                    <img src="./images/coffee3.png" alt="">
+                    <img src="./images/coffee4.png" alt="">
+                    <img src="./images/coffee5.png" alt="">
+                    <img src="./images/coffee6.png" alt="">
+                    <img src="./images/coffee7.png" alt="">
+                    <img src="./images/coffee1.png" alt="">
+                    <img src="./images/coffee2.png" alt="">
+                    <img src="./images/coffee3.png" alt="">
+                    <img src="./images/coffee4.png" alt="">
+                    <img src="./images/coffee5.png" alt="">
+                    <img src="./images/coffee6.png" alt="">
+                    <img src="./images/coffee7.png" alt="">
+                </div>
+
+                <div class="rolling_wrap2">
+                    <img src="./images/baverage1.png" alt="">
+                    <img src="./images/baverage2.png" alt="">
+                    <img src="./images/baverage3.png" alt="">
+                    <img src="./images/baverage5.png" alt="">
+                    <img src="./images/baverage6.png" alt="">
+                    <img src="./images/baverage7.png" alt="">
+                    <img src="./images/baverage8.png" alt="">
+                    <img src="./images/baverage1.png" alt="">
+                    <img src="./images/baverage2.png" alt="">
+                    <img src="./images/baverage3.png" alt="">
+                    <img src="./images/baverage5.png" alt="">
+                    <img src="./images/baverage6.png" alt="">
+                    <img src="./images/baverage7.png" alt="">
+                    <img src="./images/baverage8.png" alt="">
+                </div>
+
+                <div class="rolling_wrap3">
+                    <img src="./images/dessert1.png" alt="">
+                    <img src="./images/dessert2.png" alt="">
+                    <img src="./images/dessert3.png" alt="">
+                    <img src="./images/dessert6.png" alt="">
+                    <img src="./images/dessert7.png" alt="">
+                    <img src="./images/dessert8.png" alt="">
+                    <img src="./images/dessert9.png" alt="">
+                    <img src="./images/dessert1.png" alt="">
+                    <img src="./images/dessert2.png" alt="">
+                    <img src="./images/dessert3.png" alt="">
+                    <img src="./images/dessert6.png" alt="">
+                    <img src="./images/dessert7.png" alt="">
+                    <img src="./images/dessert8.png" alt="">
+                    <img src="./images/dessert9.png" alt="">
+                </div>
+            </article>
+
+            <!-- 3번 섹션 -->
+
+            <article class="main_brand">
+                <h2 class="d-none">브랜드 소개</h2>
+                <div class="brand_txt">
+                    <p>angel<span>in</span>us</p>
+                    <p>brand story</p>
+                    <p>일상 속 기분 좋은 경험! 엔제리너스만의 풍부한 커피의 맛, 편안한 공간이</p>
+                    <p>바쁜 일상에서 지친 마음을 힐링할 수 있도록 노력하겠습니다.</p>
+                    <a href="./brand.html" title="브랜드페이지">브랜드 페이지 이동</a>
+                </div>
+                <div class="brand_txt_m">
+                    <p>angel<span>in</span>us</p>
+                    <p>brand story</p>
+                    <div class="brand_line">&nbsp;</div>
+                    <p>일상 속 기분 좋은 경험!</p> 
+                    <p>엔제리너스만의 풍부한 커피의 맛,</p> 
+                    <p>편안한 공간이</p>
+                    <p>바쁜 일상에서 지친 마음을</p>
+                    <p>힐링할 수 있도록 노력하겠습니다.</p>
+                    <a href="./brand.html" title="브랜드페이지">브랜드 페이지 이동</a>
+                </div>
+                <div class="brand_img">
+                    <!-- <div class="brand_imgbox">
+                        <a href="brand.html" title="브랜드페이지 이동">자세히보기</a>
+                    </div> -->
+                </div>
+
+            </article>
+
+
+            <!-- 4번 섹션 -->
+
+            <article class="main_franchise">
+                <h2 class="d-none">프랜차이즈</h2>
+                <div class="franchise_txt">
+                    <p>고객의 기분좋은 경험을 만들어 갑니다</p>
+                    <p>angel<span>in</span>us</p>
+                    <p>franchise</p>
+                    <p>차별화된 시스템과 축적된 노하우로 성공적인 사업이</p> 
+                    <p>될 수 있도록 도와드리겠습니다.</p>
+                    <a href="#none" title="매장찾기">매장찾기</a>
+                    <a href="#none" title="가맹상담 신청">가맹상담 신청</a>
+                </div>
+                <div class="franchise_txt_m">
+                    <p>고객의 기분좋은 경험을 만들어 갑니다</p>
+                    <p>angel<span>in</span>us</p>
+                    <p>franchise</p>
+                    <p>차별화된 시스템과 축적된 노하우로</p> 
+                    <p>성공적인 사업이 될 수 있도록</p> 
+                    <p>도와드리겠습니다.</p>
+                    <a href="#none" title="매장찾기">매장찾기</a>
+                    <a href="#none" title="가맹상담 신청">가맹상담 신청</a>
+                </div>
+                <div class="franchise_img">
+                    <div class="franchise_imgbox">
+                        <img src="./images/fran_Bimg1.jpg" alt="매장이미지1">
+                        <img src="./images/fran_Bimg2.jpg" alt="매장이미지2">
+                        <img src="./images/fran_Bimg3.jpg" alt="매장이미지3">
+                        <img src="./images/fran_Bimg4.jpg" alt="매장이미지4">
+                        <img src="./images/fran_Bimg5.jpg" alt="매장이미지5">
+                    </div>
+                </div>
+                    <!-- <input type="text" id="find01" name="store" placeholder="매장찾기">
+                    <label for="find01">
+                    <i class="fa-regular fa-magnifying-glass"></i>
+                    </label> -->
+            </article>
+
+
+            <!-- 5번 섹션 -->
+
+            <article class="main_insta">
+                <h2 class="d-none">인스타그램</h2>
+                <div class="insta_box">
+                    <h2><i class="fa-brands fa-instagram"></i>&nbsp;instagram</h2>
+                    <ul>
+                        <li><a href="#none" title="#엔제리너스">#엔제리너스</a></li>
+                        <li><a href="#none" title="#가든오브엔젤">#가든오브엔젤</a></li>
+                        <li><a href="#none" title="#스노우커피">#스노우커피</a></li>
+                    </ul>
+                <div class="insta_img">
+                    <a href="#none" title="인스타이미지"><img src="./images/insta_img1.png" alt="인스타이미지"></a>
+                    <a href="#none" title="인스타이미지"><img src="./images/insta_img2.png" alt="인스타이미지"></a>
+                    <a href="#none" title="인스타이미지"><img src="./images/insta_img3.png" alt="인스타이미지"></a>
+                </div>    
+                </div>
+            </article>
+
+            <!-- 고정버튼 -->
+
+            <aside class="right_fixed hide-1024">
+            <div class="top_btn">
+                <a href="#"><i class="fa-solid fa-arrow-up"></i>&nbsp;&nbsp;&nbsp;TOP</a>
+            </div>
+            <div class="eatz_btn">
+                <a href="#">
+                    <!-- <img src="./images/lotteEatz1.png" alt=""> -->
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="./images/lotteEatz2.png" alt="">
+                    &nbsp;&nbsp;&nbsp;LOTTE EATZ
+                </a>
+            </div>
+            </aside>
+
+            <!-- 페이지 버튼 -->
+
+            <aside class="page_indicate">
+            <div class="s_btn">
+                <a href="#none" title="스크롤 이동">0</a>
+            </div>
+            <div class="scroll_bar">
+                <div class="scroll_barcolor"></div>
+            </div>
+            <div class="s_btn_b">
+                <a href="#none" title="스크롤 이동">05</a>
+            </div>
+            </aside>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="footer_top">
+            <div class="wrap">
+                <ul class="f_gnb">
+                    <li>
+                        <a href="policy.html">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="private.html">개인정보취급방침</a>
+                    </li>
+                </ul>
+                <div class="f_sns">
+                    <a href="https://www.instagram.com/angelinus_coffee/" target="_blank" title="인스타그램">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/angelinustime" target="_blank" title="페이스북">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/angelinustime" target="_blank" title="트위터">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="wrap">
+                <h2 class="footer_logo">
+                    <a href="index.html" title="메인페이지로 이동">
+                        <img src="./images/logo_white.png" alt="엔젤리너스 로고">
+                    </a>
+                </h2>
+                <select name="familysite" id="familysite">
+                    <option>FAMILY & BRAND SITE</option>
+                    <option value="http://www.lotte.co.kr">롯데그룹</option>
+                    <option value="http://www.lottegrs.com">LOTTE GRS</option>
+                    <option value="http://www.lotteria.com">롯데리아</option>
+                    <option value="http://www.krispykreme.co.kr">크리스피크림도넛</option>
+                    <option value="http://www.lpoint.com">L.POINT</option>
+                    <option value="http://www.pepero.co.kr">롯데제과</option>
+                    <option value="http://company.lottechilsung.co.kr">롯데칠성음료</option>
+                    <option value="http://www.lottefoods.co.kr">롯데푸드</option>
+                    <option value="http://www.lotteliquor.com">롯데주류BG</option>
+                    <option value="http://store.lotteshopping.com">롯데백화점</option>
+                    <option value="http://www.e-himart.co.kr">롯데하이마트</option>
+                    <option value="http://www.lottesuper.co.kr">롯데슈퍼</option>
+                    <option value="http://www.vic-market.co">롯데빅마켓</option>
+                    <option value="http://www.lottecinema.co.kr">롯데시네마</option>
+                    <option value="http://www.lotteimall.com">롯데홈쇼핑</option>
+                    <option value="http://www.7-eleven.co.kr">코리아세븐</option>
+                </select>
+                <address>
+                    <p>
+                        서울시 금천구 벚꽃로 104 금천롯데타워<br class="view-768-inline"> 사업자번호 : 106-81-23498 <span class="hide-768-inline">|</span> <br class="view-768-inline"> 대표자 : 차우철
+                        <br>
+                        <span class="hide-768-inline">일반쿠폰(기프티엘) 1644-4276 | 구독권 1522-2552 | </span> 
+                        고객불편사항 080-550-0005 <span class="hide-768-inline">|</span><br class="view-768-inline"> 일반문의 02-709-1114
+                    </p>
+                    <p>
+                        Copyright ⓒ 2014. ANGELINUS COM ALL RIGHTS RESERVED.
+                    </p>
+                </address>
+            </div>
+        </div>
+        
+    </footer>
+
+<script>
+    
+
+    //1번 섹션 스크립트
+
+    
+const slide=document.querySelector('.slide');
+const slide_box=document.querySelectorAll('.slide li');
+const prev_btn=document.getElementById('prev_btn')
+const next_btn=document.getElementById('next_btn')
+const btn=document.querySelectorAll('.button');
+const img_n=slide_box.length;//목록 li의 개수 5
+let l = 0
+// console.log(img_n);//5
+
+const img_w=100;//li태그의 너비
+const s_con=1//한페이지에 보여질 개수
+// console.log(img_w)
+let count=0;
+//감싸는 부모요소의 너비를 구하기
+slide.style.width=(img_w)*img_n+'%';
+
+const c_btn_list = document.querySelectorAll('.c_btn li')
+
+//왼쪽으로 움직이는 슬라이드 함수
+function mslide(n){
+    slide.style.left=(img_w)*-n+'%';
+    count=n;
+    console.log(slide.style.left);
+    console.log(count);
+    
+    for(let s_num=0; s_num<img_n; s_num++){
+        if(n==s_num){
+            c_btn_list.forEach(function(e){
+                e.classList.remove('on')
+            })
+            c_btn_list[n].classList.add('on')
+        }
+    }
+}
+//왼쪽 버튼 클릭시 왼쪽방향으롤 움직이게 한다.
+prev_btn.addEventListener('click',function(){
+    if(count>0){
+    mslide(count-1);
+    }else{
+    mslide(img_n-s_con);
+    }
+});
+//오른쪽 버튼 클릭시 오른쪽방향으로 움직이게 한다.
+next_btn.addEventListener('click', function(){
+    if(count<img_n-s_con){
+    mslide(count+1);
+    }else{
+    mslide(0);
+    }
+
+});
+
+      //1. 인덱스값을 저장하기 위한 변수선언;
+        let b  = $('.c_btn li').index();
+    //   console.log(b); //0이 나온다.
+    
+      //2. 사용자가 콘트롤 버튼을 클릭시 해당 index값 구해보기
+        $('.c_btn li').click(function(){
+        b = $(this).index();
+
+        let img_w = -($('.slide img').width()*b);
+
+        console.log(img_w);
+
+        $('.slide').animate({'left':img_w},100);
+
+        $('.c_btn li').removeClass('on'); //콘트롤 버튼 전체 서식을 변경하고
+        $(this).addClass('on');//사용자가 선택한 콘트롤 버튼만 서식을 적용
+    });
+    
+    
+    
+
+
+    //2번 섹션 스크립트
+
+    //1. 변수선언
+  const tablist=document.querySelectorAll('.main_menu_box .main_list > li');
+
+  //2. for문을 사용하여 사용자가 선택한 항목에 대한 목록만 나오게 한다.
+  for(let i=0;i<tablist.length;i++){//li태그의 개수만큼만 반복실행한다.
+    tablist[i].querySelector('.tab_btn').addEventListener('click', function(e){
+      e.preventDefault();//클릭시 이벤트를 무력화하여 아무일도 없게 함.
+      
+      for(let j=0;j<tablist.length;j++){//li태그 on클래스 적용
+        tablist[j].classList.remove('on');
+      }
+      this.parentNode.classList.add('on');//사용자가 선택한 항목에 on클래스적용
+    });
+  }
+
+
+
+  //3번 섹션 스크립트
+
+        //1. 초기값
+        let n=0;
+      // //2. 페이지 번호가 나오게한다. 1/5
+      // $('.c_btn li:first-child').html((n+1)+'/5')
+      //3. 함수만들기 fadeinOut
+      function fadeinOut(){
+        $('.franchise_img img').stop().fadeOut('linear');//첫번째 a요소를 숨긴다.
+        if(n==4){//만약 이미지라면
+          n=0;//처음 이미지가 나오게 0을 대입
+        }else{
+          n++;//1씩 증가하여 다음 이미지가 나오게 한다.
+        }
+        // console.log(n);
+        $('.franchise_img img').eq(n).stop().fadeIn();//다음 번호에 맞는 이미지가 나옴.
+  
+
+    }
+    let Timer=setInterval(fadeinOut,3000);
+
+
+
+
+    //스크롤버튼 스크립트    
+
+    $(document).ready(function(){
+    let page_num=1;
+        $('.scroll_bar > .scroll_barcolor').css('height','30px');
+        $('.s_btn a').html('0'+(page_num));
+        window.addEventListener('scroll', function(){
+            if(window.scrollY == 0){
+                // console.log('1페이지');
+                page_num=1;
+                $('.s_btn a').html('0'+(page_num));
+                $('.scroll_bar > .scroll_barcolor').css('height','30px');
+            }else if(window.scrollY == sh_1){
+                // console.log('2페이지');
+                page_num=2;
+                $('.s_btn a').html('0'+(page_num));
+                $('.scroll_bar > .scroll_barcolor').css('height','60px');
+            }else if(window.scrollY == sh_2){
+                // console.log('3페이지');
+                page_num=3;
+                $('.s_btn a').html('0'+(page_num));
+                $('.scroll_bar > .scroll_barcolor').css('height','90px');
+            }else if(window.scrollY == sh_3){
+                // console.log('4페이지');
+                page_num=4;
+                $('.s_btn a').html('0'+(page_num));
+                $('.scroll_bar > .scroll_barcolor').css('height','120px');
+            }else if(window.scrollY == sh_4){
+                // console.log('5페이지');
+                page_num=5;
+                $('.s_btn a').html('0'+(page_num));
+                $('.scroll_bar > .scroll_barcolor').css('height','150px');
+            }
+        });
+
+        //라디오버튼
+        $('.rolling_wrap1').css('visibility', 'visible');
+        $('.rolling_wrap2').css('visibility', 'hidden');
+        $('.rolling_wrap3').css('visibility', 'hidden');
+        $('#tabmenu01').click(function(){
+        $('.rolling_wrap1').css('visibility', 'visible');
+        $('.rolling_wrap2').css('visibility', 'hidden');
+        $('.rolling_wrap3').css('visibility', 'hidden');
+        });
+        $('#tabmenu02').click(function(){
+        $('.rolling_wrap2').css('visibility', 'visible');
+        $('.rolling_wrap1').css('visibility', 'hidden');
+        $('.rolling_wrap3').css('visibility', 'hidden');
+        });
+        $('#tabmenu03').click(function(){
+        $('.rolling_wrap1').css('visibility', 'hidden');
+        $('.rolling_wrap2').css('visibility', 'hidden');
+        $('.rolling_wrap3').css('visibility', 'visible');
+        });
+    });  
+    </script>
+</body>
+</html>

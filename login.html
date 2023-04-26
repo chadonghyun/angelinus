@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel in us Login-page</title>
+        <!--파비콘-->
+        <link rel="shortcut icon" type="image/x-icon" href="./images/angelinus_favicon.ico">
+    <!-- 초기화 -->
+    <link rel="stylesheet" href="./css/reset.css" type="text/css">
+    <!-- 공통서식 pc, tablet, mobile 중복서식 -->
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <link rel="stylesheet" href="./css/login.css" type="text/css">
+    <!-- 기본서식 글꼴, 색상, 크기, 링크 -->
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <!-- login 서식 적용 -->
+    <link href="./css/pc_login.css" rel="stylesheet" type="text/css">
+    <!-- tablet 768-1024px 일때 적용 -->
+    <!--link href="./css/tablet_login.css" rel="stylesheet" type="text/css"-->
+    <!-- mobile 767px까지 일때 적용 -->
+    <!--link href="./css/mobile_login.css" rel="stylesheet" type="text/css"-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+          <!--제이쿼리라이브러리-->
+          <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+          <!--easing-->
+          <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./script/common.js" defer></script>
+    <script src="./script/login.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <h1>
+                <a href="index.html" title="메인페이지로 이동">
+                    <img src="./images/logo.png" alt="엔젤리너스 로고" class="hide-768-inline">
+                    <img src="./images/logo_mobile.png" alt="엔젤리너스 로고" class="view-768-inline">
+                </a>
+            </h1>
+            <nav class="gnb">
+                <ul class="depth1">
+                    <li>
+                        <a href="menu.html" title="메뉴">메뉴</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="menu.html#coffee" title="커피">커피</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#angel_in_snow" title="angel in snow
+                                ">ANGEL<br>IN SNOW
+                            </a>
+                            </li>
+                            <li>
+                                <a href="menu.html#tea" title="차">차</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#beverage" title="음료">음료</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#dessert" title="디저트">디저트</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comunity.html" title="커뮤니티">커뮤니티</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="event.html" title="이벤트">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="voc.html" title="고객의 소리">고객의 소리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="brand.html" title="어바웃어스">어바웃어스</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="brand.html" title="엔제리너스">엔제리너스</a>
+                            </li>
+                            <li>
+                                <a href="Globalization.html" title="Globalization">Globalization</a>
+                            </li>
+                            <li>
+                                <a href="beverage.html" title="음료">A cup of<br>perpection</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="store.html" title="매장">매장</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="store.html" title="엔제리너스 매장">엔제리너스 매장</a>
+                            </li>
+                            <li>
+                                <a href="coffee.html" title="케이터링 서비스">케이터링 서비스</a>
+                            </li>
+                            <li>
+                                <a href="store.html" title="매장찾기">매장찾기</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="https://smartstore.naver.com/angelinusmall" target="_blank" title="온라인매장" >온라인매장</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sns">
+                <a href="https://www.instagram.com/angelinus_coffee/" target="_blank" title="인스타그램">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/angelinustime" target="_blank" title="페이스북">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/angelinustime" target="_blank" title="트위터">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <a href="login.html" title="회원 로그인" class="login">LOGIN</a>
+
+            <!-- mobile -->
+            
+            <a href="#" title="전체메뉴 불러오기" class="mobile_menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <nav class="m_gnb">
+                <div class="view-1024">
+                    <h2 class="gnb_logo">
+                        <a href="index.html" title="메인페이지로 이동">
+                            <img src="./images/logo_white.png" alt="엔제리너스">
+                        </a>
+                    </h2>
+                    <div class="f_sns">
+                        <a href="https://www.instagram.com/angelinus_coffee/" target="_blank" title="인스타그램">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/angelinustime" target="_blank" title="페이스북">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://twitter.com/angelinustime" target="_blank" title="트위터">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div class="m_login">
+                        <a href="login.html" title="로그인 페이지">LOGIN <i><img src="./images/login_icon_mobile.png" alt=""></i></a>
+                    </div>
+                </div>
+                <div class="view-768">
+                    <div class="m_login">
+                        <a href="login.html" title="로그인 페이지">로그인 <i><img src="./images/login_icon_mobile.png" alt=""></i></a>
+                    </div>
+                    <h2 class="gnb_logo">
+                        <img src="./images/logo_white.png" alt="엔제리너스">
+                    </h2>
+                </div>
+                <ul class="depth1">
+                    <li>
+                        <a href="menu.html" title="메뉴">메뉴</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="menu.html#coffee" title="커피">커피</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#angel_in_snow" title="angel in snow
+                                ">ANGEL IN SNOW
+                            </a>
+                            </li>
+                            <li>
+                                <a href="menu.html#tea" title="차">차</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#beverage" title="음료">음료</a>
+                            </li>
+                            <li>
+                                <a href="menu.html#dessert" title="디저트">디저트</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="comunity.html" title="커뮤니티">커뮤니티</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="event.html" title="이벤트">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="voc.html" title="고객의 소리">고객의 소리</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="brand.html" title="어바웃어스">어바웃어스</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="brand.html" title="엔제리너스">엔제리너스</a>
+                            </li>
+                            <li>
+                                <a href="Globalization.html" title="Globalization">Globalization</a>
+                            </li>
+                            <li>
+                                <a href="beverage.html" title="음료">A cup of<br>perpection</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="store.html" title="매장">매장</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="store.html" title="엔제리너스 매장">엔제리너스 매장</a>
+                            </li>
+                            <li>
+                                <a href="coffee.html" title="케이터링 서비스">케이터링 서비스</a>
+                            </li>
+                            <li>
+                                <a href="store.html" title="매장찾기">매장찾기</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="smartstore.html">온라인매장</a>
+                    </li>
+                    <li>
+                        <a href="https://www.lotteeatz.com/main/angel.html">LOTTE EATZ</a>
+                    </li>
+                </ul>
+
+
+                <div class="f_sns view-768">
+                    <a href="https://www.instagram.com/angelinus_coffee/" target="_blank" title="인스타그램">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/angelinustime" target="_blank" title="페이스북">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/angelinustime" target="_blank" title="트위터">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+
+            </nav>
+
+
+
+        </div>
+    </header>
+
+    <!--메인영역-->
+    <main>
+        <section id="login">
+            
+        <div class="login-wrapper">
+            <h2>로그인</h2>
+            <!-- <form method="post" action="#" id="login-form"> -->
+                <input type="text" name="userId" placeholder="아이디" id="id_name">
+                <input type="password" name="userPw" placeholder="비밀번호" id="pw_name">
+                <div id="red_alert">&nbsp;</div>
+                <div class="id_pw">
+                <label for="id_remember">
+                    <input type="checkbox" id="id_remember">아이디 저장
+                </label>
+                <span><span><a href="#;" title="아이디찾기">아이디 찾기</a></span> <span class="bar01">&#x007C;</span><span> <a href="#;" title="비밀번호 찾기">비밀번호 찾기</a></span></span>
+                
+                </div>
+                <input type="submit" value="로그인" id="log_btn">
+                <input type="button" value="회원가입" id="join_btn" onclick="location.href='join.html';">
+                <!-- <a href="join.html" title="회원가입"></a> -->
+                <p>간편 로그인</p>
+                <a href="javascript:;" title="네이버로 간편 로그인"><img src="./images/naverLogo.png" alt="네이버"></a>
+                <a href="javascript:;" title="카카오톡로 간편 로그인"><img src="./images/kakaoLogo.png" alt="카카오톡"></a>
+                <a href="javascript:;" title="구글로 간편 로그인"><img src="./images/googleLogo.png" alt="구글"></a>
+            <!-- </form> -->
+        </div>
+        <div id="new_mnu">
+            <div id="log_sld">
+            <a href="javascript:;" title="신메뉴페이지로 이동">
+                <img src="./images/login_event_bnnr01.jpg" alt="신메뉴 배너">
+                <img src="./images/login_event_bnnr02.jpg" alt="신메뉴 배너">
+                <img src="./images/login_event_bnnr03.jpg" alt="신메뉴 배너">
+            </a>
+            <!-- <ul class="log_c_btn">
+                <li class="on">&nbsp;</li>
+                <li>&nbsp;</li>
+                <li>&nbsp;</li>
+            </ul> -->
+            <!-- <ul class="c_btn">
+                <li>&nbsp;</li><페이지번호-->
+                <!-- <li ><i class="fas fa-pause"></i></li>일시정지/플레이 아이콘
+            </ul> -->
+        </div>
+        </div>
+    </section>
+    </main>
+    
+    <footer>
+        <div class="footer_top">
+            <div class="wrap">
+                <ul class="f_gnb">
+                    <li>
+                        <a href="policy.html">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="private.html">개인정보취급방침</a>
+                    </li>
+                </ul>
+                <div class="f_sns">
+                    <a href="https://www.instagram.com/angelinus_coffee/" target="_blank" title="인스타그램">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://www.facebook.com/angelinustime" target="_blank" title="페이스북">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/angelinustime" target="_blank" title="트위터">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="wrap">
+                <h2 class="footer_logo">
+                    <a href="index.html" title="메인페이지로 이동">
+                        <img src="./images/logo_white.png" alt="엔젤리너스 로고">
+                    </a>
+                </h2>
+                <select name="familysite" id="familysite">
+                    <option>FAMILY & BRAND SITE</option>
+                    <option value="http://www.lotte.co.kr">롯데그룹</option>
+                    <option value="http://www.lottegrs.com">LOTTE GRS</option>
+                    <option value="http://www.lotteria.com">롯데리아</option>
+                    <option value="http://www.krispykreme.co.kr">크리스피크림도넛</option>
+                    <option value="http://www.lpoint.com">L.POINT</option>
+                    <option value="http://www.pepero.co.kr">롯데제과</option>
+                    <option value="http://company.lottechilsung.co.kr">롯데칠성음료</option>
+                    <option value="http://www.lottefoods.co.kr">롯데푸드</option>
+                    <option value="http://www.lotteliquor.com">롯데주류BG</option>
+                    <option value="http://store.lotteshopping.com">롯데백화점</option>
+                    <option value="http://www.e-himart.co.kr">롯데하이마트</option>
+                    <option value="http://www.lottesuper.co.kr">롯데슈퍼</option>
+                    <option value="http://www.vic-market.co">롯데빅마켓</option>
+                    <option value="http://www.lottecinema.co.kr">롯데시네마</option>
+                    <option value="http://www.lotteimall.com">롯데홈쇼핑</option>
+                    <option value="http://www.7-eleven.co.kr">코리아세븐</option>
+                </select>
+                <address>
+                    <p>
+                        서울시 금천구 벚꽃로 104 금천롯데타워<br class="view-768-inline"> 사업자번호 : 106-81-23498 <span class="hide-768-inline">|</span> <br class="view-768-inline"> 대표자 : 차우철
+                        <br>
+                        <span class="hide-768-inline">일반쿠폰(기프티엘) 1644-4276 | 구독권 1522-2552 | </span> 
+                        고객불편사항 080-550-0005 <span class="hide-768-inline">|</span><br class="view-768-inline"> 일반문의 02-709-1114
+                    </p>
+                    <p>
+                        Copyright ⓒ 2014. ANGELINUS COM ALL RIGHTS RESERVED.
+                    </p>
+                </address>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+</html>

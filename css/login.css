@@ -1,0 +1,237 @@
+@charset "utf-8";
+header{z-index: 99;}
+main{
+  padding-top: 100px;
+  display:flex;
+  width:100%;
+  background: #F3F4EF;
+}
+#red_alert{
+  color: red;
+  text-align: center;
+  padding-top: 5px;
+  margin: 0 auto;
+  font-size: 12px;
+}
+#new_mnu{
+  position: relative;
+  max-width: 460px;
+  width: 100%;
+}
+input{
+  cursor: pointer;
+}
+#new_mnu>#log_sld a:first-of-type img{object-fit: cover;width: 100%;  
+  z-index: 5;}
+#new_mnu>#log_sld a:nth-of-type(2) img{object-fit: cover;width: 100%; 
+  z-index: 4;}
+#new_mnu>#log_sld a:nth-of-type(3) img{object-fit: cover;width: 100%; 
+  z-index: 3;}
+#new_mnu>#log_sld a:nth-of-type(4) img{object-fit: cover;width: 100%; 
+  z-index: 2;}  
+#new_mnu>#log_sld a:last-of-type img{object-fit: cover;width: 100%;
+  z-index: 1;}
+#new_mnu>#log_sld{
+  position: relative;
+}
+#new_mnu>#log_sld>a{
+  max-width: 460px;
+  width: 100%;
+}
+#log_sld{
+  max-width: 460px;
+  width: 100%;
+}
+#new_mnu>#log_sld a img{position: absolute;}
+.login-wrapper>h2{ 
+  color: #311B19;
+  margin: 80px 0px 20px 0px;
+  transform: translateX(-110px);
+}
+#login{
+  position: relative;
+  box-sizing: border-box;
+  margin:120px auto;
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  width: 930px;height: 680px;
+
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .06);
+}
+.login-wrapper{
+  width: 100%;
+  max-width: 460px;
+  text-align: center;
+}
+.login-wrapper>h2{
+  font-size: 36px;
+  font-weight: bold;
+}
+.login-wrapper>p{
+  padding-bottom: 40px;
+}
+input[type="text"],input[type="password"],#log_btn,input[type="button"]{
+  box-sizing: border-box;
+  width: 320px;height: 50px;
+}
+input[type="text"],input[type="password"]{
+  padding-left: 10px;
+  border: solid #E1E1E1 1px;
+  box-sizing: border-box;
+  background: #fff;
+}
+input[type="text"],#log_btn{
+  margin-bottom: 10px;
+}
+#log_btn,input[type="button"]{
+  font-size: 16px;
+  font-weight: bold;
+}
+#log_btn{
+  border:none;
+  background: #311B19;
+  color: #fff;
+}
+input[type="button"]{
+  border: solid #311B19 1px;
+  background: #fff;
+  margin-bottom: 40px;
+}
+.id_pw{
+  color: #311B19;
+  margin: 10px 0px 20px 0px;
+  font-size: 14px;
+}
+label[for="id_remember"]{
+margin-right: 60px;
+}
+.id_pw>span:nth-last-of-type(2), .bar01{
+color: #E1E1E1;
+}
+form>p{
+  margin-bottom: 20px;
+}
+a[title*=카카오톡]{
+  margin: 0px 20px 0px 20px;
+}
+.log_c_btn{
+  display: flex;
+justify-content: center;}
+.log_c_btn>li{
+  background: #fff;
+  margin: 0px 3px;
+  width: 10px;height: 10px;
+  border-radius: 50%;
+  transform: translateY(650px);
+  transition: 0.3s;
+  z-index: 1;
+}
+.on{
+  background: #7f5c59 !important;
+  width: 40px !important;
+  border-radius: 10px !important;
+}
+/* .c_btn{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  z-index: 10;
+  position: absolute;
+  bottom: -678px;
+  right: 0px;
+  padding: 0px;
+}
+.c_btn>li{
+  padding: 0px 5px 0px 5px ;
+} */
+/* tablet 서식 */
+@media screen and (min-width:768px) and (max-width:1024px) {
+  main{
+    width: 100%;
+  }
+  #login{
+    width: 430px;height: 100%;
+    padding-bottom:40px;
+  }
+  #login>.login-wrapper>h2{
+    margin-top: 40px;
+    font-size: 1.875em;
+  }
+  #new_mnu{
+    display: none;
+  }
+  .login-wrapper>h2{
+    margin: 20px 0px;
+  }
+  .id_pw{
+    margin-bottom: 20px;
+  }
+}
+/* 모바일 서식 */
+@media screen and (min-width:376px) and (max-width:767px) {
+  main{
+    width: 100%;
+    background: #fff;
+  }
+  #login{
+    margin-top: 0px;
+    width: 85.33%;
+    box-shadow: none;
+    justify-content: space-around
+  }
+  #login>.login-wrapper>h2{
+    text-align: center;
+    transform: translateX(0);
+    font-size: 1.875em;
+  }
+  form>p{
+    margin-bottom: 30px;
+  }
+  #new_mnu{
+    display: none;
+  }
+  input[type="text"],input[type="password"],#log_btn,input[type="button"]{
+      width:100%;
+    }
+    .id_pw{
+      display: flex;
+      justify-content: space-between;
+    }
+    /* label[for="id_remember"]{
+      margin-right: 18.75%
+    } */
+  }
+    @media screen and (max-width:375px) {
+      main{
+        width: 100%;
+        background: #fff;
+      }
+      #login{
+        margin-top:   0px;
+        width: 85.33%;
+        box-shadow: none;
+      }
+      #login>.login-wrapper>h2{
+        text-align: center;
+        transform: translateX(0);
+        font-size: 1.875em;
+      }
+      #new_mnu{
+        display: none;
+      }
+      label[for="id_remember"]{
+        margin-right:0%;
+      }
+      input[type="text"],input[type="password"],#log_btn,input[type="button"]{
+        width:100%;
+      }
+      .id_pw{
+        display: flex;
+        justify-content: space-between;
+      }
+      form>p{
+        margin-bottom: 30px;
+      }
+}

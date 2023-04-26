@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+
+    
+
+    main {
+        padding-top:100px;
+    }
+
+    #mnu_section > h2{
+        display:none;
+    }
+
+/* 배너 */
+.banner_wrap img{
+    width:100%;
+}
+
+.banner_wrap > h2{
+    display:none;
+}
+
+/* 메뉴 타이틀, 카테고리 */
+.menu_wrap{
+    max-width:1420px;
+    width:100%;
+    position: relative;
+    margin:0px auto;
+    text-align: center;
+}
+
+.banner_wrap img{
+    height:300px; width:100%;
+    position: relative;
+    object-fit: cover;
+}
+.menu_title{
+    margin-top:120px;
+    padding : 0px 40px;
+    box-sizing: border-box;
+}
+.menu_title h2{
+    font-size: 64px;
+}
+
+.menu_title p{
+    font-size: 24px;
+    border-bottom: 1px solid #30251F;
+    padding-bottom: 50px;
+    margin-top : 20px;
+}
+
+/* .menu_title p::after{
+    content:"";
+    height:1px;
+    background:#30251F;
+    width:1420px;
+} */
+
+.list{
+    display: flex;
+    justify-content: center;
+    margin : 60px 0px 100px;
+}
+
+.list > li{
+    font-size: 20px;
+    padding:0px 20px;
+    text-align:center ;
+
+}
+
+.list li a{
+    display:inline-block;
+
+    position : relative;
+    color:#999;
+}
+
+
+/* 메뉴 갤러리 */
+.tab_mnu{
+    width:100%;
+    height:auto;
+    position:relative;
+    text-align: center;
+    padding:0px 40px;
+    box-sizing: border-box;
+}
+
+.cont_wrap{
+    display: block;
+    display: none;
+    padding-bottom: 160px;
+}
+
+.cont{
+    max-width: 1440px;
+    display: flex;
+    flex-flow: row wrap;
+    flex:auto;
+
+}
+
+
+/* 첫번째 메뉴갤러리 켜기 */
+.cont_wrap1{display: block;}
+
+
+.cont li{
+    width:25%;
+    display:block;
+    margin-bottom:100px;
+    box-sizing: border-box;
+    line-height: 40px;
+    transition: 0.5s;
+    background-image:none;
+    background-position: center 35%;
+    background-size: 60%;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+.cont > li > a > p{
+    word-break: keep-all;
+    font-size: 20px;
+    width:70%;
+    margin:0px auto;
+}
+
+
+.cont > li:hover::after{
+    content:"";
+    display: block;
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top:0px; left:0px;
+    z-index: -1000;
+    background-image: url(../images/menu_bg.png);
+    background-repeat: no-repeat;
+    background-position: center 50%;
+    background-size: 60%;
+    transform: rotate(28.78deg);
+
+}
+
+
+
+.cont img{
+    width:100%;
+    transition: 0.5s;
+
+}
+
+.cont img:hover{
+    transform: scale(1.05);
+}
+
+/* menu_img01(커피메뉴) */
+
+/* 더보기 */
+.more_btn{
+    border:1px solid #30251F;
+    width:300px;
+    font-size: 20px;
+    text-align: center;
+    padding:10px;
+    margin:10px auto;
+    cursor: pointer;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.more_btn:hover{
+    background-color: #30251F;
+    color:#fff;
+}
+
+#mb04{
+    display:none;
+}
+
+.cw1_2, .cw4_2, .cw5_2, .cw5_3{
+    display:none;
+}
+
+/* 모달창 */
+.mnu_modal{
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0px;left:0px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    display:none;
+    padding:30px;
+    box-sizing: border-box;
+    /* overflow-y: auto; */
+}
+
+/* .mnu_modal::-webkit-scrollbar{
+    display:none
+} */
+
+.mnu_modal *{
+    line-height: 20px;
+}
+
+.mnu_modal > p:first-of-type{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom:30px;
+    border-bottom: 1px solid #30251F;
+    word-break: keep-all;
+}
+
+.mnu_modal > p:nth-of-type(2){
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.mnu_modal > p:nth-of-type(3){
+    font-size: 14px;
+    padding:10px 0px 20px 0px;
+}
+.mnu_modal > p:nth-of-type(4){
+    color:#816534;
+}
+.mnu_modal > p:nth-of-type(5){
+    font-weight: bold;
+}
+.mnu_modal > p:nth-of-type(n+4):nth-of-type(-n+5){
+    font-size: 12px;
+}
+.mnu_modal > p:nth-of-type(5){
+    padding-bottom: 10px;
+    border-bottom: 1px solid #30251F;
+    margin-bottom:10px;
+}
+.mnu_modal > p:last-of-type{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.fa-xmark{
+    display: inline-block;
+    position: absolute;
+    right:5px;
+    width:10%;
+    font-size: 30px;
+    color:#666;
+}
